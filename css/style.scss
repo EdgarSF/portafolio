@@ -37,6 +37,7 @@ $linkedinColor: #007BB5;
 $sectionColor: #F8F8F8;
 $textColor: #777777;
 $textColor-alt: #FFFFFF;
+$checkColor:#00C154;
 $fontFamilyDef: 'Open Sans';
 $fontFamilySemi: 'Open Sans SemiBold';
 $fontFamilyBold: 'Open Sans Bold';
@@ -66,6 +67,7 @@ $fontFamilyBold: 'Open Sans Bold';
     --sectionColor: #{$sectionColor};
     --textColor: #{$textColor};
     --textColor-alt:#{$textColor-alt};
+    --checkColor:#{$checkColor};
 }
 
 *{
@@ -116,6 +118,60 @@ h6{
     font-size: 1.5rem;
 }
 
+.btn{
+    display: block;
+    background-color: #eaeaea;
+    padding: 15px 10px;
+    width: 180px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--textColor);
+    font-family: $fontFamilySemi;
+    border:none;
+    margin: 0 auto;
+    &:hover{
+        cursor: pointer;
+        background-color: #dddddd;
+    }
+}
+
+.btn-success{
+    background-color: var(--successColor);
+    color: var(--textColor-alt);
+    &:hover{
+        background-color: #36da5c;
+    }
+}
+
+.btn-info{
+    background-color: var(--infoColor);
+    color: var(--textColor-alt);
+    &:hover{
+        background-color: #3684dd;
+    }
+}
+
+
+.btn-warning{
+    background-color: var(--warningColor);
+    color: var(--textColor-alt);
+    &:hover{
+        background-color: #ffd310;
+    }
+}
+
+
+.btn-error{
+    background-color: var(--errorColor);
+    color: var(--textColor-alt);
+    &:hover{
+        background-color: #f13520;
+    }
+}
+
+
 .headerTop{
     width: 100%;
     height: 500px;
@@ -137,7 +193,6 @@ h6{
             width: 100%;
             height: auto;
             display: flex;
-            flex-direction: column;
             justify-content: space-between;
             align-items: center;
             padding: 10px 10px;
@@ -145,10 +200,14 @@ h6{
             border-top-right-radius: 3px;
             margin-bottom: 60px;
             .navbar__logoLink{
-                display: block;
+                display: none;
                 width: 100%;
                 height: auto;
                 margin-bottom: 10px;
+            }
+            .navbar__logoLink--mobile{
+                display: block;
+                height: 40px;
             }
             .navbar__btn{
                 display: block;
@@ -276,9 +335,9 @@ h6{
     }
 
     .services{
-        background-color: var(--sectionColor);
         width: 100%;
         height: auto;
+        background-color: var(--sectionColor);
         .container{
             width: 100%;
             height: auto;
@@ -286,24 +345,86 @@ h6{
             padding: 60px 20px;
             .services__title{
                 text-align: center;
-                margin-bottom: 10px;
-            }
-            hr{
                 margin-bottom: 20px;
             }
             .row{
                 width: 100%;
                 height: auto;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
                 .colX3{
                     width: 100%;
                     height: auto;
                     .services__table{
                         width: 100%;
                         height: auto;
+                        padding: 5px;
+                        .services__table--img{
+                            width: 100%;
+                            height: auto;
+                            .tb__img{
+                                width: 100%;
+                                height: auto;
+                               .service__img{
+                                   width: 128px;
+                                   height: 128px;
+                                   margin: 0 auto;
+                               }
+                            }
+                        }
+                        .services__table--title{
+                            width: 100%;
+                            height: auto;
+                            .tb__title{
+                                width: 100%;
+                                height: auto;
+                                .service__name{
+                                    text-align: center;
+                                    color: var(--textColor);
+                                    margin-bottom: 10px;
+                                }
+                            }
+                        }
+                        .services__table--description{
+                            width: 100%;
+                            height: auto;
+                            .tb__description{
+                                display: block;
+                                width: 100%;
+                                height: auto;
+                                text-align: justify;
+                                margin-bottom: 10px;
+                            }
+                        }
+                        .services__table--feature{
+                            width: 100%;
+                            height: auto;
+                            .service__feature{
+                                width: 100%;
+                                height: auto;
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                                padding: 5px 0;
+                                i{
+                                    display: block;
+                                    color: var(--checkColor);
+                                    margin-right: 5px;
+                                }
+                                .feature__text{
+                                    display: block;
+                                    text-align: justify;
+                                    margin-left: 5px;
+                                }
+                            }
+                        }
+                        .services__table--btn{
+                            width: 100%;
+                            height: auto;
+                            .tb__btn{
+                                width: 100%;
+                                height: auto;
+                                padding: 5px;
+                            }
+                        }
                     }
                 }
             }
