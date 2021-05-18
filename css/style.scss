@@ -15,9 +15,9 @@
 
 $navbarColor: #333333;
 $footerColor: #222222;
-$successColor: #3AF365;
+$successColor: #2cca51;
 $infoColor: #3A90F3;
-$warningColor: #FFE600;
+$warningColor: #ffd900;
 $errorColor: #FF3821;
 $html5Color: #FF8000;
 $css3Color: #0080FF;
@@ -25,7 +25,7 @@ $jsColor: #ffd900;
 $bootstrapColor: #8A00D8;
 $wordpressColor: #00A1A1;
 $gitColor: #FF3400;
-$lightSuccessColor: #7DFF9B;
+$lightSuccessColor: #96fcae;
 $lightInfoColor: #C1DEFF;
 $lightWarningColor: #FFF8BC;
 $lightErrorColor: #FFCCC7;
@@ -188,6 +188,49 @@ h6{
     }
 }
 
+.alert{
+    display: block;
+    background-color: #eaeaea;
+    color: var(--textColor);
+    padding: 15px 10px;
+    border: 2px solid #8d8d8d;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.alert-success{
+    background-color: var(--lightSuccessColor);
+    color: var(--successColor);
+    font-family: $fontFamilySemi;
+    border: 3px solid var(--successColor);
+}
+
+.alert-info{
+    background-color: var(--lightInfoColor);
+    color: var(--infoColor);
+    font-family: $fontFamilySemi;
+    border: 3px solid var(--infoColor);
+}
+
+
+.alert-warning{
+    background-color: var(--lightWarningColor);
+    color: var(--warningColor);
+    font-family: $fontFamilySemi;
+    border: 3px solid var(--warningColor);
+}
+
+.alert-error{
+    background-color: var(--lightErrorColor);
+    color: var(--errorColor);
+    font-family: $fontFamilySemi;
+    border: 3px solid var(--errorColor);
+}
+
+.display-none{
+    display: none;
+}
 
 .headerTop{
     width: 100%;
