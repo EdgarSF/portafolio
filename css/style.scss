@@ -118,11 +118,28 @@ h6{
     font-size: 1.5rem;
 }
 
+.labelForm{
+    display: block;
+    margin-bottom: 5px;
+    color: var(--textColor-alt);
+}
+
+.form_control{
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 10px 10px;
+    border: 0.5px solid #d4d4d4;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
 .btn{
     display: block;
     background-color: #eaeaea;
     padding: 15px 10px;
-    width: 180px;
+    width: 200px;
     border-radius: 5px;
     text-align: center;
     font-size: 1.5rem;
@@ -426,6 +443,60 @@ h6{
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+
+    .contact{
+        width: 100%;
+        height: auto;
+        background-image: url('../images/contact_bg.jpg');
+        background-repeat: no-repeat;
+        background-color: #858585;
+        background-blend-mode: multiply;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        .container{
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            padding: 60px 20px;
+            .contact__title{
+                text-align: center;
+                color: var(--textColor-alt);
+                margin-bottom: 20px;
+            }
+            .contact__form{
+                //background-color: #FFFFFF;
+                width: 100%;
+                height: auto;
+                padding: 10px;
+                .row{
+                    width: 100%;
+                    height: auto;
+                    &:nth-child(1){
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        .colX2{
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                    &:nth-child(3){
+                        .form_control{
+                            min-width: 100%;
+                            max-width: 100%;
+                            min-height: 200px;
+                            max-height: 200px;
+                        }
+                    }
+                }
+                .btn-success{
+                    margin-bottom: 20px;
                 }
             }
         }
