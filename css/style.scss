@@ -566,6 +566,7 @@ h6{
     }
 }
 
+/********** Dispositivos Moviles **********/
 @media screen and (min-width: 400px) {
     .headerTop{
         width: 100%;
@@ -859,7 +860,9 @@ h6{
         }
     }
 }
+/********** Dispositivos Moviles **********/
 
+/********** Tablets y Pantallas Pequeñas **********/
 @media screen and (min-width:700px) {
     .headerTop{
         width: 100%;
@@ -942,3 +945,182 @@ h6{
         }
     }
 }
+
+@media screen and (min-width:960px) {
+    .headerTop{
+        width: 100%;
+        height: 500px;
+        .container{
+            width: 85%;
+            height: auto;
+            margin: 0 auto;
+            .mainNavbar{
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .navbar__btn{
+                    display: none;
+                }
+                .navbar__menu{
+                    background-color: transparent;
+                    display: flex;
+                    width: auto;
+                    height: auto;
+                    top: 0px;
+                    left: 0;
+                    position: relative;
+                    justify-content: flex-end;
+                    .menu__menuItem{
+                        flex-grow: 1;
+                        .menuItem__link{
+                            display: block;
+                            text-decoration: none;
+                            text-align: center;
+                            color: var(--textColor-alt);
+                            transition: all 0.3s;
+                            &:hover{
+                                cursor: pointer;
+                                color: var(--infoColor);
+                                background-color: transparent;
+                            }
+                        }
+                    }
+                }
+            }
+        } 
+    }
+
+    .mainContent{
+        width: 100%;
+        height: auto;
+        .about{
+            width: 100%;
+            height: auto;
+            .container{
+                width: 85%;
+                height: auto;
+                margin: 0 auto;
+                .row{
+                    width: 100%;
+                    height: auto;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    .colX2{
+                        width: 49%;
+                        height: auto;
+                        &:nth-child(2){
+                            .about__imgContainer{
+                                width: 300px;
+                                height: 300px;
+                                overflow: hidden;
+                                border-radius: 100%;
+                                margin: 0 auto;
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .headerTop{
+        width: 100%;
+        height: 500px;
+        .container{
+            width: 80%;
+            height: auto;
+        }
+    }
+
+    .mainContent{
+        width: 100%;
+        height: auto;
+        .about{
+            width: 100%;
+            height: auto;
+            .container{
+                width: 80%;
+                height: auto;
+                margin: 0 auto;
+            }
+        }
+
+        .services{
+            width: 100%;
+            height: auto;
+            .container{
+                width: 80%;
+                height: auto;
+                margin: 0 auto;
+                .row{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    flex-wrap: wrap;
+                    .colX3{
+                        width: 40%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+
+        .contact{
+            width: 100%;
+            height: auto;
+            .container{
+                width: 80%;
+                height: auto;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+/********** Tablets y Pantallas Pequeñas **********/
+
+/********** PC Y TV **********/
+@media screen and (min-width:1280px) {
+    .container{
+        width: 80%;
+        max-width:1000px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .headerTop{
+        .container{
+            .mainNavbar{
+                margin-bottom: 120px;
+            }
+        }
+    }
+
+    .mainContent{
+        width: 100%;
+        height: auto;
+        .services{
+            width: 100%;
+            height: auto;
+            .container{
+                .row{
+                    width: 100%;
+                    height: auto;
+                    flex-wrap: nowrap;
+                    .colX3{
+                        width: 33.33%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+/********** PC Y TV **********/
