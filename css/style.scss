@@ -289,7 +289,8 @@ h6{
             }
             .navbar__menu{
                 position: absolute;
-                top: 116px;
+                top: 64px;
+                left: 0px;
                 background-color: #222222;
                 width: 100%;
                 height: 0;
@@ -301,6 +302,7 @@ h6{
                 display: block;
                 overflow: hidden;
                 z-index: 100;
+                transition: all 0.5s;
                 .menu__menuItem{
                     .menuItem__link{
                         display: block;
@@ -605,56 +607,7 @@ h6{
                     display: block;
                     height: 40px;
                 }
-                .navbar__btn{
-                    display: block;
-                    width: 32px;
-                    height: 32px;
-                    padding: 5px;
-                    text-align: center;
-                    font-size: 2.8rem;
-                    color: var(--textColor-alt);
-                    box-sizing: content-box;
-                    border: 1px solid var(--textColor-alt);
-                    border-radius: 5px;
-                    &:hover{
-                        cursor: pointer;
-                        border: 1px solid transparent;
-                        background-color: var(--sectionColor);
-                        color: var(--textColor);
-                    }
-                }
-                .navbar__menu{
-                    position: absolute;
-                    top: 116px;
-                    background-color: #222222;
-                    width: 100%;
-                    height: 0;
-                    border-bottom-left-radius: 3px;
-                    border-bottom-right-radius: 3px;
-                    margin: 0;
-                    padding: 0;
-                    list-style-type: none;
-                    display: block;
-                    overflow: hidden;
-                    z-index: 100;
-                    .menu__menuItem{
-                        .menuItem__link{
-                            display: block;
-                            padding: 14px 10px;
-                            text-align: center;
-                            text-decoration: none;
-                            color: var(--textColor-alt);
-                            &:nth-child(5){
-                                border-bottom-left-radius: 3px;
-                                border-bottom-right-radius: 3px;
-                            }
-                            &:hover{
-                                cursor: pointer;
-                                background-color: var(--infoColor);
-                            }
-                        }
-                    }
-                }
+                
             }
     
             .maintitle{
@@ -721,38 +674,6 @@ h6{
                         color: var(--textColor);
                     }
                 }
-                .navbar__menu{
-                    position: absolute;
-                    top: 116px;
-                    background-color: #222222;
-                    width: 100%;
-                    height: 0;
-                    border-bottom-left-radius: 3px;
-                    border-bottom-right-radius: 3px;
-                    margin: 0;
-                    padding: 0;
-                    list-style-type: none;
-                    display: block;
-                    overflow: hidden;
-                    z-index: 100;
-                    .menu__menuItem{
-                        .menuItem__link{
-                            display: block;
-                            padding: 14px 10px;
-                            text-align: center;
-                            text-decoration: none;
-                            color: var(--textColor-alt);
-                            &:nth-child(5){
-                                border-bottom-left-radius: 3px;
-                                border-bottom-right-radius: 3px;
-                            }
-                            &:hover{
-                                cursor: pointer;
-                                background-color: var(--infoColor);
-                            }
-                        }
-                    }
-                }
             }
     
             .maintitle{
@@ -817,38 +738,6 @@ h6{
                         border: 1px solid transparent;
                         background-color: var(--sectionColor);
                         color: var(--textColor);
-                    }
-                }
-                .navbar__menu{
-                    position: absolute;
-                    top: 116px;
-                    background-color: #222222;
-                    width: 100%;
-                    height: 0;
-                    border-bottom-left-radius: 3px;
-                    border-bottom-right-radius: 3px;
-                    margin: 0;
-                    padding: 0;
-                    list-style-type: none;
-                    display: block;
-                    overflow: hidden;
-                    z-index: 100;
-                    .menu__menuItem{
-                        .menuItem__link{
-                            display: block;
-                            padding: 14px 10px;
-                            text-align: center;
-                            text-decoration: none;
-                            color: var(--textColor-alt);
-                            &:nth-child(5){
-                                border-bottom-left-radius: 3px;
-                                border-bottom-right-radius: 3px;
-                            }
-                            &:hover{
-                                cursor: pointer;
-                                background-color: var(--infoColor);
-                            }
-                        }
                     }
                 }
             }
