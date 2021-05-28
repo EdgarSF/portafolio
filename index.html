@@ -204,23 +204,35 @@
                         <div class="colX2">
                             <label for="costumerName" class="labelForm">Nombre:</label>
                             <input type="text" name="cname" id="costumerName" class="form_control" placeholder="Juan Perez" required>
-                            <div class="alert alert-error display-none">
+                            <div class="alert alert-error display-none" id="ef_name">
                                 <i class="fas fa-times-circle"></i>
-                                <span class="alert__text">El Campo es Requrido</span>
+                                <span class="alert__text">Este Campo es Requrido</span>
+                            </div>
+                            <div class="alert alert-error display-none" id="wrong_name">
+                                <i class="fas fa-times-circle"></i>
+                                <span class="alert__text">El Nombre que Ingresaste no es correcto, Solo se permiten <strong>caracteres de la A - Z / a - z.</strong></span>
                             </div>
                         </div>
                         <div class="colX2">
                             <label for="costumerPhone" class="labelForm">Teléfono (opcional):</label>
                             <input type="tel" name="cphone" id="costumerPhone" class="form_control" placeholder="555 876 2364">
+                            <div class="alert alert-error display-none" id="wrong_phone">
+                                <i class="fas fa-times-circle"></i>
+                                <span class="alert__text">El Teléfono que Ingresaste no es Correcto, Solo se Permite un <strong>Maximo de 10 Números.</strong></span>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="colX1">
                             <label for="costumerEmail" class="labelForm">Correo Electrónico:</label>
                             <input type="email" name="cemail" id="costumerEmail" class="form_control" placeholder="juanperez@dominio.com" required>
-                            <div class="alert alert-error display-none">
+                            <div class="alert alert-error display-none" id="ef-email">
                                 <i class="fas fa-times-circle"></i>
-                                <span class="alert__text">Debes Ingresar un Correo Electrónico Valido</span>
+                                <span class="alert__text">Este Campo es Requerido</span>
+                            </div>
+                            <div class="alert alert-error display-none" id="wrong_email">
+                                <i class="fas fa-times-circle"></i>
+                                <span class="alert__text">El Correo Electrónicó que Ingresasnte no es Correcto</span>
                             </div>
                         </div>
                     </div>
@@ -230,16 +242,16 @@
                             <textarea name="cmessage" id="costumerMessage" class="form_control" placeholder="Por medio del presente..." required></textarea>
                             <div class="alert alert-error display-none">
                                 <i class="fas fa-times-circle"></i>
-                                <span class="alert__text">El Campo es Requrido</span>
+                                <span class="alert__text">Este Campo es Requrido</span>
                             </div>
                         </div>
                     </div>
                     <button type="submit" class="btn btn-success">Contactar</button>
-                    <div class="alert alert-error display-none">
+                    <div class="alert alert-error display-none" id="empty_form">
                         <i class="fas fa-times-circle"></i>
                         <span class="alert__text">Llena los Campos que sean Obligatorios</span>
                     </div>
-                    <div class="alert alert-success display-none">
+                    <div class="alert alert-success display-none" id="form_success">
                         <i class="fas fa-check-circle"></i>
                         <span class="alert__text">La información Fue Enviada Correctamente. En Breve me Comunicare Contigo</span>
                     </div>
@@ -247,14 +259,12 @@
             </div>
         </section>
     </main>
-    <button class="btn btn-info button-up" id="buttonUp"><i class="fas fa-chevron-up"></i></button>
+    <!--<button class="btn btn-info button-up" id="buttonUp"><i class="fas fa-chevron-up"></i></button>-->
     <footer class="footerPage">
         <div class="container">
             <h6 class="copyright">&#169;2021 - Todos los Derechos Reservados</h6>
         </div>
     </footer>
-    <script src="js/btn-up.js"></script>
-    <script src="js/navbar.js"></script>
-    <script src="js/validation.js"></script>
+    <script src="js/interactive.js"></script>
 </body>
 </html>

@@ -549,6 +549,67 @@ h6{
             }
         }
     }
+
+    .portafolio{
+        width: 100%;
+        height: auto;
+        .container{
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            padding: 60px 20px;
+            .row{
+                width: 100%;
+                height: auto;
+                margin: 20px auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .card{
+                    width: 100%;
+                    height: auto;
+                    margin: 20px auto;
+                    border: 1px solid #a1a1a1;
+                    border-radius: 10px;
+                    .card__title{
+                        display: block;
+                        margin: 10px auto;
+                        font-family: $fontFamilyBold;
+                        font-size: 3rem;
+                        text-align: center;
+                        color: var(--textColor);
+                    }
+                    .card__subtitle{
+                        display: block;
+                        margin: 10px auto;
+                        font-family: $fontFamilySemi;
+                        font-size: 1.8rem;
+                        text-align: center;
+                        color: var(--textColor);
+                    }
+                    .card__iconsContainer{
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        margin: 10px auto 20px auto;
+                        .socialIcon__link{
+                            font-size: 2.5rem;
+                            &:nth-child(1){color: var(--facebookColor);}
+                            &:nth-child(2){color: var(--twitterColor);}
+                            &:nth-child(3){color: var(--instagramColor);}
+                            &:nth-child(4){color: var(--youtubeColor);}
+                            &:nth-child(5){color: var(--linkedinColor);}
+                        }
+
+                    }
+                    .btn{
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .button-up{
@@ -761,6 +822,34 @@ h6{
             }
         }
     }
+
+    .mainContent{
+        width: 100%;
+        height: auto;
+        .portafolio{
+            width: 100%;
+            height: auto;
+            .container{
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+                padding: 60px 20px;
+                .row{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    .card{
+                        width: 48%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
 }
 /********** Dispositivos Moviles **********/
 
@@ -927,6 +1016,25 @@ h6{
                 }
             }
         }
+
+        .portafolio{
+            width: 100%;
+            height: auto;
+            .container{
+                width: 90%;
+                height: auto;
+                margin: 0 auto;
+                padding: 60px 20px;
+                .row{
+                    width: 100%;
+                    height: auto;
+                    .card{
+                        width: 30%;
+                        height: auto;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -982,6 +1090,17 @@ h6{
                 width: 80%;
                 height: auto;
                 margin: 0 auto;
+            }
+        }
+
+        .portafolio{
+            width: 100%;
+            height: auto;
+            .container{
+                width: 80%;
+                height: auto;
+                margin: 0 auto;
+                padding: 60px 20px;
             }
         }
     }

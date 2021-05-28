@@ -1,6 +1,9 @@
 'use strict'
 
-function showMenu() {
+/*************************************************************************************************************
+ ****************************************** Funcionalidad de la navegacion movil******************************
+ ************************************************************************************************************/
+
     let btnMenu = document. querySelector('#btn-menu');
     let menu = document.querySelector('#menu');
     let menuOpc = document.querySelectorAll('.menuItem__link');
@@ -22,6 +25,6 @@ function showMenu() {
             menu.removeAttribute('style');
         });
     }
-}
+/*************************************************************************************************************/
 
-window.onload = showMenu();
+/** Formulario **/
