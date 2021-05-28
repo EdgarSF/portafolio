@@ -544,7 +544,11 @@ h6{
                     }
                 }
                 .btn-success{
+                    display: block;
                     margin-bottom: 20px;
+                }
+                .alert-error, .alert-success{
+                    margin: 20px auto;
                 }
             }
         }
