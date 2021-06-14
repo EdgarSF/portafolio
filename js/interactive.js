@@ -28,3 +28,22 @@
 /*************************************************************************************************************/
 
 /** Formulario **/
+
+const expr = {
+    costumerName: /^[a-zA-ZÀ-ÿ]{1,40}$/,
+    costumerPhone: /^\d{10}$/,
+    costumerEmail: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
+}
+
+const contactForm = document.querySelector('#frm_contact');
+
+//Variables para campos
+const costumerName = document.querySelector('#costumerName');
+const costumerPhone = document.querySelector('#costumerPhone');
+const costumerEmail = document.querySelector('#costumerEmail');
+const costumerMessage = document.querySelector('#costumerMessage');
+
+costumerName.addEventListener();
+costumerPhone.addEventListener();
+costumerEmail.addEventListener();
+costumerMessage.addEventListener();
